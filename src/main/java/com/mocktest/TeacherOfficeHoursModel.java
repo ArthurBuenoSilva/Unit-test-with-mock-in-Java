@@ -2,10 +2,6 @@ package com.mocktest;
 
 import java.util.ArrayList;
 
-enum Period {
-  MORNING, EVENING
-}
-
 public class TeacherOfficeHoursModel {
   public String name;
   public String officeHour;
