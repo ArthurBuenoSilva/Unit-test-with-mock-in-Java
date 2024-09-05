@@ -86,10 +86,11 @@ public class TeacherOfficeHoursController {
   public int getTeacherBuildingNumber(String teacherName) {
     TeacherOfficeHoursModel teacherOfficeHoursModel = getTeacherOfficeHoursInfo(teacherName);
 
-    int room = teacherOfficeHoursModel.room;
-    if (teacherOfficeHoursModel != null && room < 31 && room < 0) {
-      int building = ((room - 1) / 5) + 1;
-      return building;
+    if (teacherOfficeHoursModel != null) {
+      int room = teacherOfficeHoursModel.room;
+      if (room > 0 || room < 31) {
+        return ((room - 1) / 5) + 1;
+      }
     }
 
     return 0;
