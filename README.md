@@ -6,11 +6,3 @@
 ```bash
 mvn clean install
 ```
-2. Run the project:
-```bash
-mvn compile exec:java
-```
-
-
-
-
