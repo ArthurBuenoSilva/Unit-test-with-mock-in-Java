@@ -88,7 +88,7 @@ public class TeacherOfficeHoursController {
 
     if (teacherOfficeHoursModel != null) {
       int room = teacherOfficeHoursModel.room;
-      if (room > 0 || room < 31) {
+      if (room > 0 && room < 31) {
         return ((room - 1) / 5) + 1;
       }
     }
