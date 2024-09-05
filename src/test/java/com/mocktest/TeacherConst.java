@@ -1,6 +1,6 @@
 package com.mocktest;
 
-public class MockedData {
+public class TeacherConst {
 
   public static String TEACHER_1 = "{ \"name\": \"John Doe\", \n " +
       "\"officeHour\": \"10:00 AM - 11:00 AM\", \n " +
