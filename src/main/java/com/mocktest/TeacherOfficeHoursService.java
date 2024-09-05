@@ -6,9 +6,8 @@ package com.mocktest;
 
 public interface TeacherOfficeHoursService {
   /**
-   * Get teacher office hours info
-   * @param teacherName
-   * @return Teacher office hours info in JSON format converted to string, if not exists return NULL
+   * Get teachers office hours info
+   * @return Teachers office hours info in JSON format converted to string, if not exists return NULL
    */
-  public String fetchData();
+  String fetchData();
 }
