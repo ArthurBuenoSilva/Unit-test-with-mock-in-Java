@@ -1,7 +1,6 @@
 package com.mocktest;
 
 import com.google.gson.Gson;
-import com.mocktest.TeacherOfficeHoursModel;
 
 public class TeacherOfficeHoursController {
   private TeacherOfficeHoursService teacherOfficeHoursService;
