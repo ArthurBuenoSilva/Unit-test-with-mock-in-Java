@@ -41,4 +41,20 @@ public class TeacherConst {
   public static String TEACHER_10 = "{ \"name\": \"Hannah White\", \n " +
       "\"officeHour\": \"2:00 PM - 3:00 PM\", \n " +
       "\"room\": 10 }";
+
+  public static String concatIntoJsonArray(String... jsonObjects) {
+    StringBuilder jsonArray = new StringBuilder();
+
+    jsonArray.append("[");
+
+    for (int i = 0; i < jsonObjects.length; i++) {
+        jsonArray.append(jsonObjects[i]);
+        if (i < jsonObjects.length - 1) {
+            jsonArray.append(", ");
+        }
+    }
+
+    jsonArray.append(" ]");
+    return jsonArray.toString();
+  }
 }
