@@ -54,7 +54,7 @@ public class TeacherOfficeHoursController {
    * @return {@code true} if the teacher is available at the specified office
    *         hour, {@code false} otherwise
    */
-  public boolean teacherAvailable(String teacherName, String officeHour) {
+  public boolean isTeacherAvailable(String teacherName, String officeHour) {
     TeacherOfficeHoursModel teacherOfficeHoursModel = getTeacherOfficeHoursInfo(teacherName);
 
     return teacherOfficeHoursModel != null && teacherOfficeHoursModel.officeHour.equals(officeHour);
