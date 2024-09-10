@@ -31,8 +31,6 @@ public class TestTeacherOffice {
 		String teachers = TeacherConst.concatIntoJsonArray(TeacherConst.TEACHER_1);
 		Mockito.when(service.fetchData()).thenReturn(teachers);
 
-		System.out.println("service.fetchData() = " + service.fetchData());
-
 		TeacherOfficeHoursModel teacher = controller.getTeacherOfficeHoursInfo("John Doe");
 		assertNotNull(teacher);
 		assertEquals(teacher.name, "John Doe");
