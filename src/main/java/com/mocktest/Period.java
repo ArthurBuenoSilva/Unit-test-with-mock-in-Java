@@ -1,5 +1,12 @@
 package com.mocktest;
 
 public enum Period {
-  MORNING, EVENING
+  MORNING("morning"),
+  AFTERNOON("afternoon");
+
+  public final String label;
+
+  Period(String label) {
+    this.label = label;
+  }
 }
